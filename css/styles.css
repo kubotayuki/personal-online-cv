@@ -120,6 +120,23 @@ form {
   margin-bottom: 30px;
 }
 
+/**************** Contact ****************/
+
+#contact p {
+  margin-top: 20px;
+}
+#contact p span {
+  display: block;
+}
+.contactInfo a {
+  color: #000;
+  margin-left: 10px;
+}
+.emailContact, .formContact {
+  margin-top: 10px;
+}
+
+
 /* Carousel Styles */
 
 /*#carousel-heroSection .carousel-indicators {
