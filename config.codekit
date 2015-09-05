@@ -198,6 +198,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/welcome-bg-image-color2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 836206,
+		"inputAbbreviatedPath": "\/img\/welcome-bg-image-color2.jpg",
+		"outputAbbreviatedPath": "\/img\/welcome-bg-image-color2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/welcome-bg-image-color3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 902532,
+		"inputAbbreviatedPath": "\/img\/welcome-bg-image-color3.jpg",
+		"outputAbbreviatedPath": "\/img\/welcome-bg-image-color3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/welcome-bg-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

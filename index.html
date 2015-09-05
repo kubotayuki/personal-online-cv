@@ -14,9 +14,9 @@
   
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
-<header class="navbar navbar-inverse navbar-fixed-top" id="top" role="navigation">
+<header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#yk-navbar" aria-controls="yk-navbar" aria-expanded="false">
@@ -24,14 +24,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#top" class="navbar-brand">Yuki Kubota</a>
+      <a href="#top" class="navbar-brand"><span>YK</span></a>
     </div>
 
     <nav id="yk-navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#about">Bio</a></li>
+        <li><a href="#info">Details</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -39,7 +39,7 @@
 </header> <!-- end header -->
 
 <!-- Welcome section -->
-<section id="welcome" class="container-fluid clearfix">
+<section id="welcome" class="container-fluid clearfix" id="top">
   <div class="container">
     <div class="yuki">
       <div class="meImage">
@@ -109,10 +109,10 @@
     <h3>My name is Yuki Kubota</h3>
     <p>My story doesn’t begin with a child genius who started coding before he could speak. It does, however, tell of a 14 year old who got his first PC running MS-DOS and who has since had a lasting affair with all things technology and web.</p>
 
-    <p>I was Born in Japan, but have lived, studied and worked in 5 different countries. From working as an event manager in Tokyo, to Project Coordinator for humanitarian projects in India and Cambodia. <br />Simply put, both my personal and professional paths have been atypical.    </p> 
+    <p>I was Born in Japan, but have lived, studied and worked in 5 different countries. To put is simply, both my personal and professional paths have been atypical. From working as an event manager in Tokyo, to Project Coordinator for humanitarian projects in India and Cambodia. I believe these experiences have given me the ability to adapt quickly to new cultures and enviroments.</p>
 
-    <p>Moving to Melbourne in 2011 ( I Love this city! ), I decided to pursue my fascination with web development and have been steadily honing my craft as a freelance front-end web developer while being the primary carer for my beautiful daughters.</p>
-    <p>What was initially a fascination has become a full blown passion. And now ( The stars have finally aligned ) I’m eager to dive in full time and take things to the next level. </p>
+    <p>Moving to Melbourne in 2011 ( I Love this city! ), I decided to pursue my fascination with web development and have been steadily honing my craft as a freelance front-end web developer while juggling the fulltime job of being the primary carer for my beautiful daughters.</p>
+    <p>What was initially a fascination has become a full blown passion. And now ( The stars have finally aligned ) I’m eager and able to dive in full time and take things to the next level. </p>
 
     <p>My experiences so far have taught me that:
       <ul>
@@ -150,9 +150,9 @@
           </div>
           <h2>Life Skills:</h2>
             <ul>
-              <li>Communication</li>
-              <li>Adaptabilty</li>
-              <li>Accountability</li>
+              <li>Punctual</li>
+              <li>Excellent written/verbal skills</li>
+              <li>Efficient</li>
               <li>Strong work ethic</li>
               <li>Problem Solving</li>
               <li>Learn quickly</li>
@@ -176,9 +176,76 @@
 </section>
 
 <!-- Questions Section -->  
-<section id="questions">
-  <div class="container">
-    
+<section id="info">
+  <h2 class="pageTitle"><span><em>Even more info</em></span></h2>
+  <div class="container mediumColumn">
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <a href="#collapseOne" data-toggle="collapse" data-parent="accordion" aria-expanded="false">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              View or download my CV <span class="glyphicon glyphicon-chevron-down"></span>
+            </h4>
+          </div>
+        </a>
+      </div>
+
+      <div id="collapseOne" class="panel-collapse collapse">
+        <div class="panel-body">
+          <iframe src="assets/Yuki_Kubota_Resume.pdf"></iframe>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <a href="#collapseTwo" data-toggle="collapse" data-parent="accordion" aria-expanded="false">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              Just techinical stuff <span class="glyphicon glyphicon-chevron-down"></span>
+            </h4>
+          </div>
+        </a>
+      </div>
+
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <p>I'm confident on both Mac and Windows systems, although I definitely prefer Apple products. </p>
+          <div class="row">
+            <div class="col-sm-6 col-xs-12">
+              <p>My current system (On display in the hero image) consists of:</p>
+              <ul>
+                <li>Macbook Pro Retina 13"</li>
+                <li>Thunderbolt Display</li>
+                <li>Magic Mouse</li>
+                <li>Apple wireless keyboard</li>
+                <li>Super Mouse pad</li>
+                <li>Lots of legal pads and pens</li>
+                <li>iPad 2</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <p>Apps I use regularly</p>
+              <ul>
+                <li>Sublime Text 2</li>
+                <li>Chrome</li>
+                <li>Safari</li>
+                <li>MAMP</li>
+                <li>Pixelmator</li>
+                <li>CyberDuck</li>
+                <li>CodeKit</li>
+                <li>Github</li>
+                <li>Terminal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div><!-- Panel Group end -->
+
   </div>
 </section>
 
@@ -208,6 +275,21 @@
     
   </div>
 </section>
+
+
+    <script type="text/javascript">
+      var $root = $('html, body');
+        $('.navbar-nav a').click(function() {
+          var href = $.attr(this, 'href');
+          $root.animate({
+            scrollTop: $(href).offset().top
+          }, 500, function(){
+            window.location.hash = href;
+          });
+          return false;
+        });
+
+    </script>
 
 </body>  
 </html>
